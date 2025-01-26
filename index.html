@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotBook</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+  .first-main-content{
+    background-color: #545151;
+    border-radius: 10px;
+  }
+</style>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="./images/dblogo.png" title="logo" alt="">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search facebook">
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <ul>
+                <li><i class="fa fa-solid fa-house fa-2x ></i>"></i></li>
+                <li><i class="fa fa-solid fa-video fa-2x"></i></li>
+                <li><i class="fa fa-solid fa-shop fa-2x"></i>></li>
+                <li><i class="fa fa-solid fa-gamepad fa-2x"></i></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><i class="fa fa-solid fa-grip fa-2x"></i></li>
+                <li><i class="fa fa-brands fa-facebook-messenger fa-2x"></i></li>
+                <li><i class="fa fa-solid fa-bell fa-2x"></i></li>
+                <div class="profile online">
+                    <img src="./images/profile.png" alt="">
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- =============== Left Sidebar ====================-->
+        <div class="left-sidebar">
+            <div class="profile-image">
+                <img src="./images/profile.png">Profile Details
+            </div>
+            <hr>
+            <div class="links">
+                <a href="#"><i class="fa fa-solid fa-user-group"></i><h5>Friends</h5></a>
+                 <!--================ Notification====================== -->
+                <a href="#"><i class="fa-solid fa-bell"></i><h5>Notifications</h5></a>
+                <div id="notification-popup">
+                    <div>
+                        <div class="profile">
+                            <img src="./images/profile-pic.png" alt="">
+                        </div>
+                        <div class="notification-body">
+                            <b>John Kenty</b> accepted your friend request
+                            <small class="muted">3 Days ago</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile">
+                            <img src="./images/profile-pic.png" alt="">
+                        </div>
+                        <div class="notification-body">
+                            <b>John Kenty</b> accepted your friend request
+                            <small class="muted">3 Days ago</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile">
+                            <img src="./images/profile-pic.png" alt="">
+                        </div>
+                        <div class="notification-body">
+                            <b>John Kenty</b> accepted your friend request
+                            <small class="muted">3 Days ago</small>
+                        </div>
+                    </div>
+                </div>
+         
+                <a href="#"><i class="fa-solid fa-comments-dollar"></i><h5>Feeds</h5></a>
+                <a href="#"><i class="fa-solid fa-video"></i><h5>Video</h5></a>
+                <a href="#"><i class="fa-regular fa-clock"></i><h5>Memories</h5></a>
+                <a id="saved" href="#"><i class="fa-solid fa-bookmark"></i><h5>Saved</h5></a>
+                <a id="pages" href="#"><i class="fa-solid fa-flag"></i><h5>Pages</h5></a>
+                <a id="insta" href="#"><i class="fa-brands fa-instagram"></i><h5>Reels</h5></a>
+            </div>
+            <div class="see-more">
+                <button><i class="fa-solid fa-caret-down"></i>See More</button>
+                <div class="links">
+                    <a href="#"><i class="fa fa-solid fa-user-group"></i><h5>Friends</h5></a>
+                    <a href="#"><i class="fa-solid fa-table-columns"></i><h5>Dashboard</h5></a>
+                    <a href="#"><i class="fa-solid fa-comments-dollar"></i><h5>Feeds</h5></a>
+                    <a href="#"><i class="fa-solid fa-video"></i><h5>Video</h5></a>
+                    <a href="#"><i class="fa-regular fa-clock"></i><h5>Memories</h5></a>
+                    <a id="saved" href="#"><i class="fa-solid fa-bookmark"></i><h5>Saved</h5></a>
+                    <a id="pages" href="#"><i class="fa-solid fa-flag"></i><h5>Pages</h5></a>
+                    <a id="insta" href="#"><i class="fa-brands fa-instagram"></i><h5>Reels</h5></a>
+                </div>
+            </div>
+        </div>
+        <!-- =============== Main Content ===================-->
+        <div class="main-content">
+            <div class="first-main-content">
+                <div class="create-post">
+                    <div class="profile-main"><img src="./images/profile.png"></div>
+                    <div class="what-on-mind">
+                        <input type="text" id="on-mind" placeholder="What's on your mind ?">
+                    </div>
+                </div>
+                <hr class="hr-style">
+                <div class="second-main-content">
+                    
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <!-- =============== Right Sidebar ==================-->
+        <div class="right-sidebar">
+            
+        </div>
+    </div>
+</body>
+</html>
