@@ -7,11 +7,11 @@
   font-family: "Poppins", serif;
 }
 body {
-  background: linear-gradient(23deg, #323131, #444343);
+  /* background: linear-gradient(23deg, #323131, #444343); */
   height: 100vh;
 }
 nav {
-  background-color: #87b7d7;
+  background-color: #b0acef;
   box-shadow: 4px 4px 8px rgb(201, 164, 3);
   display: flex;
   align-items: center;
@@ -31,14 +31,14 @@ nav {
   width: 111px;
 }
 .search-box {
-  background-color: #202020;
-  color: #cfcaca;
+  background-color: #efeaea;
+  color: #0e0e0e;
   padding: 2px 10px;
   border-radius: 5px;
 }
 .nav-left input {
   background-color: transparent;
-  color: white;
+  color: rgb(10, 10, 10);
   height: 35px;
   width: 180px;
   border: none;
@@ -109,22 +109,27 @@ ul li {
   justify-content: space-between;
   padding: 15px 5px;
   height: 100vh;
+  overflow: hidden;
 }
 
 .right-sidebar {
-  flex-basis: 25%;
+  height: 100vh;
+  overflow-y: auto;
+  flex-basis: 30%;
   position: sticky;
   top: 70px;
   align-self: flex-start;
 }
 
 .left-sidebar {
-  background: linear-gradient(23deg, #363434, #3a3838);
-  /* height: 100vh; */
+  height: 100vh;
+  overflow-y: auto;
+  /* background: linear-gradient(23deg, #363434, #3a3838); */
+  color: #202020;
   border-radius: 2px;
-  flex-basis: 25%;
+  flex-basis: 30%;
   position: sticky;
-  top: 70px;
+  top: 100px;
   align-self: flex-start;
 }
 .profile-image {
@@ -144,29 +149,26 @@ ul li {
   display: flex;
   align-items: center;
   text-decoration: none;
-  height: 30px;
-  padding: 8px;
-  color: white;
-  margin: 12px 0px 25px 28px; /* top right bottom left */
+  height: 25px;
+  padding: 20px;
+  color: black;
+  margin: 10px 0px 22px 28px; /* top right bottom left */
 }
 .left-sidebar a:hover {
   color: white;
   background-color: #5a5b5b;
   border-radius: 10px;
-  /* width: 240px;
-   height: 33px; */
 }
 .links a i {
   /* background-color: #c68401; */
   font-size: 20px;
   border-radius: 50%;
-  color: #0031d3;
+  color: #000000;
   margin-right: 20px;
 }
 .links a i:hover {
-  background-color: #c68401;
   border-radius: 50%;
-  color: #fefefe;
+  color: #4907ff;
   margin-right: 20px;
 }
 #insta i {
@@ -216,7 +218,9 @@ ul li {
   color: #585656;
 }
 .main-content {
-  flex-basis: 46%;
+  height: 100vh;
+  overflow-y: auto;
+  flex-basis: 40%;
 }
 hr {
   color: #585656;
@@ -244,7 +248,7 @@ hr {
   border: none;
   outline: none;
   border-radius: 40px;
-  background-color: #383333;
+  background-color: #313030;
   color: #fff;
   height: 52px;
   width: 95%;
@@ -253,7 +257,8 @@ hr {
 
 .first-main-content {
   height: 130px;
-  background-color: #545151;
+  padding-top: 8px;
+  background-color: #acaaaa;
   border-radius: 10px;
 }
 .second-main-content {
@@ -267,8 +272,8 @@ hr {
   font-weight: 600;
   color: #fff;
 }
-.second-main-content:hover{
-    cursor: pointer;
+.second-main-content:hover {
+  cursor: pointer;
 }
 .second-main-content #video i {
   color: blue;
@@ -323,15 +328,14 @@ hr {
     border-radius: 0px 0px 5px;
 }  */
 
-
-/*====================== Events ==========================*/
+/*====================== Right side bar ==========================*/
 .events {
   margin-bottom: 10px;
 }
 .events-heading {
   display: flex;
   justify-content: space-between;
-  color: #fff;
+  color: #030303;
   margin-bottom: 5px;
 }
 .events-heading a {
@@ -343,7 +347,8 @@ hr {
   margin-bottom: 20px;
 }
 .events1 .box {
-  background-color: #ffffff;
+  background-color: #101010;
+  color: #fff;
   text-align: center;
   height: 48px;
   width: 65px;
@@ -360,29 +365,31 @@ hr {
 }
 .event-details {
   margin-left: 10px;
-  color: #fff;
+}
+.event-details i {
+  color: #07b14b;
 }
 .event-details i span {
   font-size: 12px;
   font-weight: 200;
   margin-left: 4px;
+  color: #101010;
 }
 .more-info {
   font-size: 12px;
   margin-left: 8px;
-  color: #cbcbf5;
+  color: #5555f8;
   cursor: pointer;
 }
 
 /*================================ Advertisement ============================== */
-.advertisements{
-    margin-bottom: 10px;
+.advertisements {
+  margin-bottom: 10px;
 }
 
 .ad-header {
   display: flex;
   justify-content: space-between;
-  color: #fff;
   margin-bottom: 10px;
 }
 
@@ -393,7 +400,7 @@ hr {
   cursor: pointer;
 }
 .ad-images img {
-  height: 126px;
+  height: 136px;
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
@@ -405,95 +412,191 @@ hr {
   z-index: 100;
   position: absolute;
   top: 48%;
-  left: 250px;
+  left: 290px;
   height: 40px;
   width: 40px;
-  background-color: #5d5a5a;
   border-radius: 50%;
   color: #fff;
 }
 
 /* ======================= Messenger ==================*/
 
-.messages{
-    color: #fff;
-  }
-  .msg-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-.chat-profile{
-display: flex;
-align-items: center;
-margin-bottom: 8px;
+.messages {
+  
 }
-.chat-profile img{
-height: 45px;
-border-radius: 50%;
-margin-right: 30px;
+.msg-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
-.chat-profile p{
-    font-size: 15px;
+.chat-profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+  position: absolute;
+}
+.chat-profile .online{
+  position: relative;
+  top: 30px;
+  right:  115px;
+}
+.chat-profile img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.chat-profile p {
+  font-size: 15px;
 }
 
 .right-sidebar {
   height: 100%;
-  /* background-color: #494c4c; */
   padding: 10px 30px;
   border-radius: 10px;
 }
 
-.stories{
-margin-top: 20px;
-text-align: center;
-display: flex;
-justify-content: space-between;
+
+.stories {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
-.story{
-width: 18%;
-padding-top: 32%;
-background-image:linear-gradient(transparent, rgba(0,0,0,0.5)), url(./images/status-1.png);
-background-size: cover;
-background-position: center;
-border-radius: 10px;
-position: relative;
+.story {
+  width: 18%;
+  padding-top: 32%;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url(./images/status-1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
 }
-.story2{
-background-image:linear-gradient(transparent, rgba(0,0,0,0.5)), url(./images/status-2.png);
+.story:hover {
+  cursor: pointer;
 }
-.story3{
-background-image:linear-gradient(transparent, rgba(0,0,0,0.5)), url(./images/status-3.png);
+.story2 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url(./images/status-2.png);
 }
-.story4{
-background-image:linear-gradient(transparent, rgba(0,0,0,0.5)), url(./images/status-4.png);
+.story3 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url(./images/status-3.png);
 }
-.story5{
-background-image:linear-gradient(transparent, rgba(0,0,0,0.5)), url(./images/status-5.png);
+.story4 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url(./images/status-4.png);
 }
-.story img{
-position: absolute;
-width: 40px;
-border-radius: 50%;
-border: 5px solid #3902ff;
-top: 5px;
-left: 5px;
+.story5 {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
+    url(./images/status-5.png);
 }
-.story p{
-position: absolute;
-bottom: 1px;
-width: 100%;
-color: #fff;
-font-size: 15px;
-font-weight: 500;
+.story img {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  border: 5px solid #3902ff;
+  top: 5px;
+  left: 5px;
 }
-.story.story1 img{
-top: unset;
-left: 50%;
-bottom: 35px;
-transform: translateX(-50%);
-border: none;
-width: 30px;
+.story p {
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+.story.story1 img {
+  top: unset;
+  left: 50%;
+  bottom: 35px;
+  transform: translateX(-50%);
+  border: none;
+  width: 30px;
 }
 
+/* ========= Scrollbar style ===============*/
+.left-sidebar::-webkit-scrollbar,
+.right-sidebar::-webkit-scrollbar,
+.main-content::-webkit-scrollbar {
+    width: 6px; /* Thin scrollbar */
+}
+
+/* Scrollbar Track */
+.left-sidebar::-webkit-scrollbar-track,
+.right-sidebar::-webkit-scrollbar-track,
+.main-content::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Light gray track */
+    border-radius: 10px;
+}
+
+/* Scrollbar Handle */
+.left-sidebar::-webkit-scrollbar-thumb,
+.right-sidebar::-webkit-scrollbar-thumb,
+.main-content::-webkit-scrollbar-thumb {
+    background: #888; /* Darker handle */
+    border-radius: 10px;
+}
+
+/* Scrollbar Handle on Hover */
+.left-sidebar::-webkit-scrollbar-thumb:hover,
+.right-sidebar::-webkit-scrollbar-thumb:hover,
+.main-content::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Even darker on hover */
+}
+
+/*================== Post style ========================*/
+.posts-container{
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  /* color: #fff; */
+  background-color: #d4cdcd;
+  padding: 12px 10px;
+  border-radius: 10px;
+}
+.user-profile{
+  display: flex;
+  margin-bottom: 15px;
+}
+.user-profile img{
+  height: 49px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.user-profile img:hover{
+  cursor: pointer;
+  border: 2px solid #4d4df3;
+}
+.user-name a{
+  text-decoration: none;
+  /* color: #ffffff; */
+  font-weight: 500;
+}
+.date-aud{
+  display: flex;
+}
+.date-aud p{
+  margin-right: 4px;
+  font-size: 12px;
+  color: #aba3a3;
+  margin-left: 12px;
+}
+.date-aud i{
+  color: #ada8a8;
+}
+.caption{
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.caption span{
+  font-weight: 600;
+}
+.caption span a{
+  color: #797dea; margin-right: 3px;
+}
+.post-image img{
+  border-radius: 5px;
+}
